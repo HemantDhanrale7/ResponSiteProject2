@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script> -->
+
+    <link rel="stylesheet" href="datatable.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel = "stylesheet" href = "https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src = "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
+    </script>
+    <script src = "https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    
+
+    
+   
+</head>
+
+<body style="background-color:#E74F2B">
+  <div class="container mb-5 mt-5 p-4" style="background-color:#F6F6F6;">
+    <div class="container mt-3 my-2" >
+
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Add 
+        </button> -->
+    </div>
+        
+
+    <div class="container">
+        <a href="file:///E:/Task_3/contact.html"> <i class="fa fas fa-arrow-left pull-left" style="font-size:30px; cursor: pointer; color: #E74F2B;"></i> </a>
+        <a href="#"> <i class="fa fas fa-arrow-right pull-right" style="font-size:30px; cursor: pointer; color: #E74F2B;" ></i> </a>
+          
+         <br> <br>
+        <h3>Recording Requests  :</h3> 
+        <br>
+        <a href="#"> <i class="fa fa-copy fa-2x m-2" id="copybtn" style="text-decoration: none !important;"></i>Copy link </a> <br><br>
+        
+        <table id="mytable" class="table table-bordered table-striped table-hover example tabledata" >
+            <thead>
+                <tr>
+                    <th>Check</th>
+                    <th>Requested To</th>
+                    <th>Request Title</th>
+                    <th>Request Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="TData">
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">User Response</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+
+                <form  method="POST" id="form">
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+
+                        <div class="form-group" id="myform">
+                            <label for="Question_Order">Question Order</label>
+                            <input type="number" class="form-control form_input" name="" id="Question_orders">
+                            <label for="Question">Question</label>
+                            <input type="text" class="form-control form_input" name="Question" id="Question_text">
+                            <div class="form-group">
+                                <label for="QuestionType">Question Type</label>
+                                <select class="form-control form_input" name="QuestionType" id="Question_type">
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="AnswerLimit">Answer Limit</label>
+                              <input type="number" class="form-control form-input" name="answerlimit" id="Answer_Limit">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-primary"  id="savebtn" data-bs-dismiss="modal">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title">Confirm Delete</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+
+                <form  method="POST" id="form">
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+
+                        <h5>You want to delete?</h5>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-danger" id="deleteItem" onclick="deleteData()"  data-bs-dismiss="modal">Yes</button>
+                       
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">
+    <script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script>
+    <script src=" https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src=" https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src=" https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script> -->
+
+
+    <script src="scripttabledata.js"></script>
+
+    
+</div>
+</body>
+
+</html>

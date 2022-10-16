@@ -1,0 +1,488 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="container-fluid">
+        <nav class="navbar bg-color navbar-expand-sm navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" id="navbrand" href="#">Ignatiuz</a>
+                <!-- <a class="navbar-brand" id="navbrand" href="#">ignatiuz</a> -->
+                <button class="navbar-toggler navtoggle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="nav navbar-nav navbar-light navbar-right m-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link w3-bar-item w3-button w3-mobile  " href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- LOGOUT Dropdown -->
+
+            <div class="dropdown">
+                <button type="button" class="btn " data-bs-toggle="dropdown">
+                    <span class="col-white mx-1 text-uppercase ">
+                        <p><i class="fa fa-user p-1 " aria-hidden="true"></i> <a
+                                class="text-decoration-none text-white m-lg-2" id="user_name" href="#"
+                                style="font-size:14px;"></a> </p>
+                    </span>
+                </button>
+                <ul class="dropdown-menu">
+                    <center>
+                        <h6>You want to Logout?</h6>
+                    </center> <br>
+
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-info " data-bs-dismiss="modal"
+                            style="font-size:13px ;">Close</button>
+                        <button type="button" class="btn btn-danger" onclick="logoutpage()" data-bs-dismiss="modal"
+                            style="font-size:13px ;">Logout</button>
+                    </div>
+
+                </ul>
+            </div>
+
+
+
+
+            <!-- <span class="col-white mx-1 text-uppercase ">
+                <p><i class="fa fa-user p-1 " aria-hidden="true"></i> <a class="text-decoration-none text-white m-lg-2"
+                        id="user_name" href="#" style="font-size:14px;"></a> </p>
+            </span> -->
+        </nav>
+    </div>
+
+
+
+    <div class="container-fluid bg-color pt-5">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 p-5">
+                <center class="col-white">
+                    <p id="companyname">Ignatiuz</p>
+                    <p>we specialize in technology</p>
+
+                </center>
+                <center>
+                    <div class="form-inline pb-5">
+                        <div class="input-group w-100 pb-5">
+                            <input type="email" class="form-control w-50" size="50" placeholder="Email Address">
+                            <div class="input-group-btn">
+                                <button class="btn btn-danger" type="button">Subscribe</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </center>
+
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5" id="about">
+        <div class="row">
+            <div class="col-sm-8">
+                <h4>About Company Page</h4><br><br>
+                <b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Totam incidunt unde cumque tempora ipsa
+                        libero voluptates, corrupti repellendus? Modi fugit
+                        numquam natus earum facilis amet voluptates
+                        praesentium quod, nostrum recusandae!</p>
+                </b>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Fugit ipsum quas recusandae. Dolores,
+                    accusantium totam, esse veniam culpa, eum voluptates
+                    asperiores deserunt nobis non modi numquam
+                    explicabo maxime sunt illo?</p>
+            </div>
+            <div class="col-sm-4">
+
+                <center>
+                    <i class="fa fa-signal icon font-color"></i>
+                </center>
+
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-success">Get in Touch</button>
+    </div>
+
+
+    <div class="container-fluid border my-5 common-bg-color">
+        <div class="row">
+            <div class="col-sm-4 pt-5 text-center">
+                <i class="fa fa-globe icon font-color" aria-hidden="true"></i>
+            </div>
+            <div class="col-sm-8 pt-5">
+                <h4>OUR VALUES</h4><br><br>
+
+                <p><b>MISSION : </b>Our Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Dicta consequuntur
+                    nulla et rem architecto doloribus a voluptatum iusto
+                    error id mollitia, beatae, minima placeat
+                    dolores necessitatibus recusandae debitis quas ipsa?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Explicabo cupiditate consequatur animi non
+                    ad iste harum voluptatem, quidem autem odio voluptate
+                    voluptates praesentium odit deleniti
+                    voluptatum libero delectus porro nemo.
+                </p> <br><br>
+
+                <p style="opacity:0.5;"><b>VISION : </b>Our Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit.
+                    Dicta consequuntur
+                    nulla et rem architecto doloribus a voluptatum iusto
+                    error id mollitia, beatae, minima placeat
+                    dolores necessitatibus recusandae debitis quas ipsa?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Explicabo cupiditate consequatur animi non
+                    ad iste harum voluptatem, quidem autem odio voluptate
+                    voluptates praesentium odit deleniti
+                    voluptatum libero delectus porro nemo.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4 class="p-5"></h4>
+                <p class="p-4" style="padding-bottom:8px;"></p>
+                <center>
+                    <i class="fa fa-power-off" style="font-size:48px;color:red"></i>
+                    <p>POWER</p>
+                    <P>libero delectus porro nemo.</P>
+                </center>
+
+                <h4 class="p-1"></h4>
+                <p class="p-1" style="padding-bottom:8px ;"></p>
+                <center>
+                    <i class="fa fa-leaf" style="font-size:48px;color:red"></i>
+                    <p>GREEN</p>
+                    <P>libero delectus porro nemo.</P>
+                </center>
+
+            </div>
+
+
+            <div class="col-sm-4" id="services">
+                <center>
+                    <h4 class="p-5">SERVICES</h4>
+                    <p>What we offer</p>
+                    <center>
+                        <i class="fa fa-heart" style="font-size:48px;color:red"></i>
+                        <p>LOVE</p>
+                        <P>libero delectus porro nemo.</P>
+                    </center>
+                </center>
+
+                <h4 class="p-1"></h4>
+                <p class="p-1" style="padding-bottom:8px ;"></p>
+                <center>
+                    <i class="fa fa-certificate" style="font-size:48px;color:red"></i>
+                    <p>CERTIFIED</p>
+                    <P>libero delectus porro nemo.</P>
+                </center>
+
+            </div>
+
+
+            <div class="col-sm-4">
+                <h4 class="p-5"></h4>
+                <p class="p-4" style="padding-bottom:8px ;"></p>
+                <center>
+                    <i class="fa fa-lock" style="font-size:48px;color:red"></i>
+                    <p>JOB DONE</p>
+                    <P>libero delectus porro nemo.</P>
+                </center>
+
+                <h4 class="p-1"></h4>
+                <p class="p-1" style="padding-bottom:4px ;"></p>
+                <center>
+                    <i class="fa fa-wrench icon_color" style="font-size:48px;color:red" aria-hidden="true"></i>
+                    <p>HARD WORK</p>
+                    <P>libero delectus porro nemo.</P>
+                </center>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 common-bg-color p-md-5" id="portfolio">
+        <center>
+            <h4>PORTFOLIO</h4><br><br>
+            <p>What we have created</p> <br>
+        </center>
+        <div class="row mx-5">
+
+            <div class="col-sm-4 ">
+                <div class="card hover">
+                    <img class="card-img-top" src="img1.png" alt="">
+                    <center>
+                        <div class="card-body">
+                            <p class="card-text">Paris</p>
+                            <p>Yes,we built Paris</p>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card hover">
+                    <img class="card-img-top" src="img2.png" alt="">
+                    <center>
+                        <div class="card-body">
+                            <p class="card-text">New York</p>
+                            <p>Yes, we built New York </p>
+                        </div>
+                    </center>
+
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="card hover">
+                    <img class="card-img-top" src="img3.png" alt="">
+                    <center>
+                        <div class="card-body">
+                            <p class="card-text">San Francisco</p>
+                            <p>Yes, we built San Francisco </p>
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid pt-5 common-bg-color">
+        <center class="fa-2x">
+            <h4>WHAT OUR CUSTOMER SAY</h4>
+        </center>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" id="disc" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active p-5">
+
+                    <center class="d-block w-100 align-content-center">
+                        <p>“Could I...BE any more happy with this company”</p>
+                        <p>Chandler Bing,Actor,FriendsAlot</p>
+                    </center>
+                </div>
+                <div class="carousel-item p-5">
+                    <center class="d-block w-100 align-content-center">
+                        <p>“Could I...BE any more happy with this company”</p>
+                        <p>Chandler Bing,Actor,FriendsAlot</p>
+                    </center>
+                </div>
+                <div class="carousel-item p-5">
+                    <center class="d-block w-100 align-content-center">
+                        <p>“Could I...BE any more happy with this company”</p>
+                        <p>Chandler Bing,Actor,FriendsAlot</p>
+                    </center>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev  " type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon  "></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+    </div> <br><br> <br>
+
+
+
+
+    <div class="container-fluid pt-5" id="pricing">
+
+        <center>
+            <h4>PRICING</h4><br><br>
+            <p>Choose a payment plan that works for you</p><br>
+        </center>
+        <div class="row mx-5">
+
+            <div class="col-sm-4 mb-5">
+                <div class="card hover">
+                    <center>
+                        <div class="card-body bg-color pb-2">
+                            <p class="col-white fa-2x">Basic</p>
+                        </div>
+                    </center>
+
+                    <center class="mt-2 pb-0 mb-0">
+                        <p>100 lorem </p>
+                        <p>50 lorem </p>
+                        <p>25 lorem </p>
+                        <p>10 lorem </p>
+                    </center>
+                    <hr>
+                    <center class="pt-0 mt-0">
+                        <div class="card-body">
+                            <p class="card-text fa-2x">$19</p>
+                            <p>per month</p>
+                            <a href="#" class="btn btn-danger mt-3
+                                    bg-color">Sign-up</a>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-5 ">
+                <div class="card hover">
+                    <center>
+                        <div class="card-body bg-color pb-2">
+                            <p class="col-white fa-2x">Pro</p>
+                        </div>
+                    </center>
+
+                    <center class="mt-2 pb-0 mb-0">
+                        <p>100 lorem </p>
+                        <p>50 lorem </p>
+                        <p>25 lorem </p>
+                        <p>10 lorem </p>
+                    </center>
+                    <hr>
+                    <center class="pt-0 mt-0">
+                        <div class="card-body">
+                            <p class="card-text fa-2x">$29</p>
+                            <p>per month</p>
+                            <a href="#" class="btn btn-danger mt-3
+                                    bg-color">Sign-up</a>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-5">
+                <div class="card hover">
+                    <center>
+                        <div class="card-body bg-color pb-2">
+                            <p class="col-white fa-2x">Primeum</p>
+                        </div>
+                    </center>
+
+                    <center class="mt-2 pb-0 mb-0">
+                        <p>100 lorem </p>
+                        <p>50 lorem </p>
+                        <p>25 lorem </p>
+                        <p>10 lorem </p>
+                    </center>
+                    <hr>
+                    <center class="pt-0 mt-0 ">
+                        <div class="card-body">
+                            <p class="card-text fa-2x">$49</p>
+                            <p>per month</p>
+                            <a href="#" class="btn btn-danger mt-3
+                                    bg-color">Sign-up</a>
+                        </div>
+                    </center>
+                </div>
+
+            </div>
+        </div><br> <br>
+
+        <div class="container-fluid common-bg-color" id="contact">
+
+            <div class="row pt-5">
+                <div class="col-sm-6 text-decoration-none">
+                    </i>
+                    <p>Contact us and we'll get back to you within 24 hours</p>
+                    <a href="http://www.googlemaps.com">
+                        <p> <img src="geo-alt.svg" alt=""> Chicago,US</p>
+                    </a>
+
+                    <a href="tel:+001515151515">
+                        <p> <img src="phone.svg" alt=""> +001515151515</p>
+                    </a>
+
+                    <a href="mailto:mymail@something.com">
+                        <p><img src="envelope.svg" alt=""> mymail@something.com</p>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <span>
+                        <h4>CONTACT</h4>
+                    </span>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" name="" placeholder="Name" id="">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" name="" placeholder="Email" id="">
+                        </div>
+
+                    </div>
+                    <textarea class="form-control mt-3" placeholder="Comment" name="text" id="comment"
+                        rows="5"></textarea>
+                    <button type="button" class="btn btn-outline-secondary mt-4
+                        pull-right mb-5">Send</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <img src="img4.png" id="posterimg" class="img-fluid" alt="">
+        </div>
+        <br><br>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
